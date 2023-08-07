@@ -269,7 +269,7 @@ cli::response commandLineInterface::exec( const char *cmd )
                         retValue = cli::response::ERROR;
                     }
                     else {
-                        retValue = iCmd->cmdCallback( handler ); /*invoke the callback*/
+                        retValue = iCmd->cmdCallback( handler, iCmd->param ); /*invoke the callback*/
                     }
                 }
                 break;

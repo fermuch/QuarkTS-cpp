@@ -277,7 +277,7 @@ namespace qOS {
         * @param h A reference to the CLI command handler instance
         * @return The command response.
         */
-        using commandCallback_t = response (*)( handler_t );
+        using commandCallback_t = response (*)( handler_t, void* );
 
         /**
         * @brief A typedef that holds the options for an AT-Command object
